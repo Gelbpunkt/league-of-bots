@@ -9,6 +9,21 @@ function remove(array, element) {
 }
 
 var appRouter = function (app) {
+    function rearrange_bots(app) {
+        if (app.bots.length == 4) {
+            app.bots = [app.bots[1], app.bots[2], app.bots[3], app.bots[0]];
+        }
+        if (app.bots.length == 3) {
+            app.bots = [app.bots[1], app.bots[2], app.bots[0]];
+        }
+        if (app.bots.length == 2) {
+            app.bots = [app.bots[1], app.bots[0]];
+        }
+        if (app.bots.length == 1) {
+            app.gameDone = true;
+        }
+    }
+
     app.get("/", function(req, res) {
         res.status(404).json({"status": "error", "text": "call an endpoint please"});
     });
@@ -56,6 +71,13 @@ var appRouter = function (app) {
         }
         if (!["Attack", "Move"].includes(action)) {
             return res.status(500).json({"status": "error", "text": "not a valid action"});
+        }
+        if (req.action == "Recover") {
+            var heal = Math.floor(Math.random() * 10) + 5;
+            app.bots[0].hp = app.bots[0].hp + heal;
+            res.status(200).json({"status": "done", "text": `recovered ${heal} hp`});
+            rearrange_bots(app);
+            return;
         }
         loop:
             for(var i=0; i<40; i++) {
@@ -110,18 +132,7 @@ var appRouter = function (app) {
                 res.status(500).json({"status": "error", "text": "nothing to attack"});
             }
         }
-        if (app.bots.length == 4) {
-            app.bots = [app.bots[1], app.bots[2], app.bots[3], app.bots[0]];
-        }
-        if (app.bots.length == 3) {
-            app.bots = [app.bots[1], app.bots[2], app.bots[0]];
-        }
-        if (app.bots.length == 2) {
-            app.bots = [app.bots[1], app.bots[0]];
-        }
-        if (app.bots.length == 1) {
-            app.gameDone = true;
-        }
+        rearrange_bots(app);
     });
 }
 
