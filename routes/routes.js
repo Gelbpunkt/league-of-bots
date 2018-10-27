@@ -66,6 +66,7 @@ var appRouter = function (app) {
         app.map[0][39] = app.bots[1];
         app.map[39][0] = app.bots[2];
         app.map[39][39] = app.bots[3];
+        app.gameDone = false;
         res.status(200).json({"status": "done", "text": "game created"});
     });
 
