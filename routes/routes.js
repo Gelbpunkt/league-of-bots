@@ -109,7 +109,7 @@ var appRouter = function (app) {
             var heal = Math.floor(Math.random() * 10) + 5;
             app.bots[0].hp = app.bots[0].hp + heal;
             if (app.bots[0].hp > 100) {
-                app.bost[0].hp = 100;
+                app.bots[0].hp = 100;
             }
             res.status(200).json({"status": "done", "text": `recovered ${heal} hp`, "info": "hp cap at 100 points"});
             rearrange_bots(app);
