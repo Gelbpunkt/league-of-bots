@@ -1,11 +1,29 @@
 const { table } = require("table")
 
-function remove(array, element) {
+function remove (array, element) {
     const index = array.indexOf(element);
 
     if (index !== -1) {
         array.splice(index, 1);
     }
+}
+
+function shuffle (a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+function needsGame (req, res, next) {
+    if (req.app.gameDone) {
+        return res.status(500).json({"status": "error", "text": `game ended, winner is ${req.app.bots[0].name}. Send a get request to /new to restart!`});
+    }
+    next();
 }
 
 var appRouter = function (app) {
@@ -28,15 +46,30 @@ var appRouter = function (app) {
         res.status(404).json({"status": "error", "text": "call an endpoint please"});
     });
 
-    app.get("/map", function (req, res) {
+    app.get("/map", needsGame, function (req, res) {
         res.status(200).json(app.map);
     });
 
-    app.get("/turn", function (req, res) {
+    app.get("/turn", needsGame, function (req, res) {
         res.status(200).json(app.bots[0]);
     });
 
-    app.get("/prettymap", function(req, res) {
+    app.get("/new", function (req, res) {
+        if (!app.gameDone) {
+            return res.status(500).json({"status": "error", "text": "game running"});
+        }
+        app.bots = [{name: "Dyno", hp: 100}, {name: "Naoko", hp: 100}, {name: "IdleRPG", hp: 100}, {name: "Rythm", hp: 100}]
+        shuffle(app.bots);
+
+        app.map = Array(40).fill(null).map(e => Array(40).fill(null));
+        app.map[0][0] = app.bots[0];
+        app.map[0][39] = app.bots[1];
+        app.map[39][0] = app.bots[2];
+        app.map[39][39] = app.bots[3];
+        res.status(200).json({"status": "done", "text": "game created"});
+    });
+
+    app.get("/prettymap", needsGame, function(req, res) {
         res.setHeader('Content-Type', 'text/plain');
         var text = "";
         app.bots.forEach(function (bot) {
@@ -59,7 +92,7 @@ var appRouter = function (app) {
         res.status(200).send(text);
     });
 
-    app.post("/move", function (req, res) {
+    app.post("/move", needsGame, function (req, res) {
         var direction = req.body.direction;
         var action = req.body.action;
         var bot = req.body.bot;

@@ -7,13 +7,6 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(function (req, res, next) {
-    if (app.gameDone) {
-        return res.status(500).json({"status": "error", "text": "game ended"});
-    }
-    next();
-})
-
 routes(app);
 
 app.bots = [{name: "Dyno", hp: 100}, {name: "Naoko", hp: 100}, {name: "IdleRPG", hp: 100}, {name: "Rythm", hp: 100}]
