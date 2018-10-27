@@ -54,6 +54,10 @@ var appRouter = function (app) {
         res.status(200).json(app.bots[0]);
     });
 
+    app.get("/bots", needsGame, function (req, res) {
+        res.status(200).json(app.bots);
+    });
+
     app.get("/new", function (req, res) {
         if (!app.gameDone) {
             return res.status(500).json({"status": "error", "text": "game running"});
