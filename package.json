@@ -1,0 +1,22 @@
+{
+  "name": "leage-of-bots",
+  "version": "1.0.0",
+  "description": "A Discord-based battle bot backend",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "battle",
+    "bots",
+    "ai"
+  ],
+  "author": "Jens Reidel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

@@ -1,0 +1,68 @@
+[Sat Oct 27 11:34:19.876651 2018] [proxy:error] [pid 7423:tid 140237158201088] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:34:19.876719 2018] [proxy_http:error] [pid 7423:tid 140237158201088] [client 172.68.226.52:25004] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:34:20.334259 2018] [proxy:error] [pid 7423:tid 140237166593792] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:34:20.334299 2018] [proxy_http:error] [pid 7423:tid 140237166593792] [client 172.68.226.94:46630] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:34:27.539242 2018] [proxy:error] [pid 7423:tid 140237174986496] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:34:27.539278 2018] [proxy_http:error] [pid 7423:tid 140237174986496] [client 108.162.237.244:48022] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:34:32.623254 2018] [proxy:error] [pid 7423:tid 140237149808384] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:34:32.623293 2018] [proxy_http:error] [pid 7423:tid 140237149808384] [client 162.158.202.88:47804] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:34:33.226318 2018] [proxy:error] [pid 7422:tid 140237443421952] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:34:33.226366 2018] [proxy_http:error] [pid 7422:tid 140237443421952] [client 162.158.202.76:50054] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://league.travitia.xyz/
+[Sat Oct 27 11:34:33.470467 2018] [proxy:error] [pid 7423:tid 140237183379200] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:34:33.470507 2018] [proxy_http:error] [pid 7423:tid 140237183379200] [client 108.162.237.244:52106] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:40:06.106050 2018] [proxy_http:error] [pid 7423:tid 140237166593792] (20014)Internal error (specific information not available): [client 162.158.79.251:30812] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 11:40:06.106051 2018] [proxy_http:error] [pid 7423:tid 140237158201088] (20014)Internal error (specific information not available): [client 162.158.79.161:25736] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 11:40:06.106125 2018] [proxy:error] [pid 7423:tid 140237166593792] [client 162.158.79.251:30812] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 11:40:06.106136 2018] [proxy:error] [pid 7423:tid 140237158201088] [client 162.158.79.161:25736] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 11:41:58.659067 2018] [proxy:error] [pid 7423:tid 140236604544768] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:41:58.659146 2018] [proxy_http:error] [pid 7423:tid 140236604544768] [client 172.68.226.58:44342] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://accounts.google.com/signin/oauth/oauthchooseaccount?client_id=377778394412-sh808qj1kameomsbapg0cbospitd1m3f.apps.googleusercontent.com&as=zVMbf5sThRVXCgu5rh3oyQ&destination=https%3A%2F%2Ftravitia.cloudflareaccess.com&approval_state=!ChRqX1pBcG91OGM3UXIyRUYzbDgxYxIfVXhxNmI1NU1aZk1lOERFdWhZOThQYzhGelVsVmF4WQ%E2%88%99APNbktkAAAAAW9WggedRI7FjvcZBLHPsprC6M3tD25dA&oauthgdpr=1&xsrfsig=AHgIfE8k0BIY55fgxDKModgZGu9mlFvN2g&flowName=GeneralOAuthFlow
+[Sat Oct 27 11:41:59.186603 2018] [proxy:error] [pid 7423:tid 140236050921216] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:41:59.186656 2018] [proxy_http:error] [pid 7423:tid 140236050921216] [client 172.68.226.94:42576] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:43:44.733228 2018] [proxy:error] [pid 7423:tid 140237551916800] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:43:44.733279 2018] [proxy_http:error] [pid 7423:tid 140237551916800] [client 172.68.226.58:10190] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://travitia.cloudflareaccess.com/
+[Sat Oct 27 11:43:45.201136 2018] [proxy:error] [pid 7423:tid 140237543524096] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:43:45.201199 2018] [proxy_http:error] [pid 7423:tid 140237543524096] [client 172.68.226.94:13512] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:50:56.857043 2018] [proxy_http:error] [pid 7422:tid 140237435029248] (20014)Internal error (specific information not available): [client 173.245.54.7:22550] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 11:50:56.857134 2018] [proxy:error] [pid 7422:tid 140237435029248] [client 173.245.54.7:22550] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 11:52:19.903714 2018] [proxy:error] [pid 7423:tid 140237166593792] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:19.903772 2018] [proxy_http:error] [pid 7423:tid 140237166593792] [client 162.158.167.204:31394] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:52:21.619272 2018] [proxy:error] [pid 7423:tid 140237158201088] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:21.619319 2018] [proxy_http:error] [pid 7423:tid 140237158201088] [client 172.69.135.172:45118] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://league.travitia.xyz/move
+[Sat Oct 27 11:52:30.185281 2018] [proxy:error] [pid 7423:tid 140237141415680] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:30.185318 2018] [proxy_http:error] [pid 7423:tid 140237141415680] [client 162.158.167.204:42280] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:52:31.439537 2018] [proxy:error] [pid 7422:tid 140236789118720] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:31.439577 2018] [proxy_http:error] [pid 7422:tid 140236789118720] [client 172.69.135.172:58992] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://league.travitia.xyz/
+[Sat Oct 27 11:52:36.789560 2018] [proxy:error] [pid 7423:tid 140236646508288] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:36.789608 2018] [proxy_http:error] [pid 7423:tid 140236646508288] [client 172.69.134.189:43084] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:52:38.003065 2018] [proxy:error] [pid 7423:tid 140236638115584] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:38.003109 2018] [proxy_http:error] [pid 7423:tid 140236638115584] [client 172.69.135.172:11834] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://league.travitia.xyz/
+[Sat Oct 27 11:52:55.625444 2018] [proxy:error] [pid 7423:tid 140236629722880] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:55.625488 2018] [proxy_http:error] [pid 7423:tid 140236629722880] [client 162.158.167.204:11558] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 11:52:56.920202 2018] [proxy:error] [pid 7423:tid 140236621330176] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 11:52:56.920242 2018] [proxy_http:error] [pid 7423:tid 140236621330176] [client 172.69.135.172:37814] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://league.travitia.xyz/
+[Sat Oct 27 11:53:17.292754 2018] [proxy_http:error] [pid 7423:tid 140236042528512] (20014)Internal error (specific information not available): [client 162.158.78.124:41604] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 11:53:17.292805 2018] [proxy:error] [pid 7423:tid 140236042528512] [client 162.158.78.124:41604] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 11:54:12.458655 2018] [proxy_http:error] [pid 7423:tid 140237174986496] (20014)Internal error (specific information not available): [client 173.245.54.7:18598] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 11:54:12.458717 2018] [proxy:error] [pid 7423:tid 140237174986496] [client 173.245.54.7:18598] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 11:55:16.937093 2018] [proxy_http:error] [pid 7423:tid 140236050921216] (20014)Internal error (specific information not available): [client 162.158.79.41:46152] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 11:55:16.937173 2018] [proxy:error] [pid 7423:tid 140236050921216] [client 162.158.79.41:46152] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 12:22:47.048294 2018] [proxy:error] [pid 7422:tid 140237560309504] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 12:22:47.048372 2018] [proxy_http:error] [pid 7422:tid 140237560309504] [client 162.158.79.251:33006] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 12:22:47.232350 2018] [proxy:error] [pid 7423:tid 140237158201088] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 12:22:47.232396 2018] [proxy_http:error] [pid 7423:tid 140237158201088] [client 172.68.65.150:11838] AH01114: HTTP: failed to make connection to backend: 127.0.0.1, referer: https://league.travitia.xyz/move
+[Sat Oct 27 12:27:49.445604 2018] [proxy:error] [pid 7423:tid 140237158201088] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 12:27:49.445669 2018] [proxy_http:error] [pid 7423:tid 140237158201088] [client 173.245.54.7:36256] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 12:27:49.537903 2018] [proxy:error] [pid 7423:tid 140237183379200] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 12:27:49.537944 2018] [proxy_http:error] [pid 7423:tid 140237183379200] [client 162.158.186.18:31604] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 12:50:13.580319 2018] [proxy_http:error] [pid 7423:tid 140237543524096] (20014)Internal error (specific information not available): [client 172.69.62.142:26316] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 12:51:52.933459 2018] [proxy_http:error] [pid 7422:tid 140237443421952] (20014)Internal error (specific information not available): [client 162.158.78.112:60584] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 12:51:52.933522 2018] [proxy:error] [pid 7422:tid 140237443421952] [client 162.158.78.112:60584] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 12:55:10.589408 2018] [proxy_http:error] [pid 7422:tid 140236763940608] (20014)Internal error (specific information not available): [client 162.158.79.47:35224] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 12:55:10.589463 2018] [proxy:error] [pid 7422:tid 140236763940608] [client 162.158.79.47:35224] AH00898: Error reading from remote server returned by /move
+[Sat Oct 27 13:09:46.510363 2018] [proxy:error] [pid 7423:tid 140237543524096] (111)Connection refused: AH00957: HTTP: attempt to connect to 127.0.0.1:2312 (127.0.0.1) failed
+[Sat Oct 27 13:09:46.510436 2018] [proxy_http:error] [pid 7423:tid 140237543524096] [client 162.158.202.166:39356] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Sat Oct 27 14:01:55.322354 2018] [proxy_http:error] [pid 7423:tid 140237568702208] (20014)Internal error (specific information not available): [client 162.158.165.94:43552] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 15:43:38.257052 2018] [proxy_http:error] [pid 7423:tid 140236654900992] (20014)Internal error (specific information not available): [client 162.158.202.82:31054] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 15:47:53.055590 2018] [proxy_http:error] [pid 7423:tid 140236050921216] (20014)Internal error (specific information not available): [client 172.69.135.52:17536] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 15:52:29.756874 2018] [proxy_http:error] [pid 7423:tid 140237191771904] (20014)Internal error (specific information not available): [client 172.69.134.93:50658] AH01102: error reading status line from remote server 127.0.0.1:2312
+[Sat Oct 27 15:52:29.756951 2018] [proxy:error] [pid 7423:tid 140237191771904] [client 172.69.134.93:50658] AH00898: Error reading from remote server returned by /move
