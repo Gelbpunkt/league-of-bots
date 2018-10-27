@@ -1,5 +1,5 @@
 {
-  "name": "leage-of-bots",
+  "name": "league-of-bots",
   "version": "1.0.0",
   "description": "A Discord-based battle bot backend",
   "main": "app.js",
